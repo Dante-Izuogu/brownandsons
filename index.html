@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Brown & Sons Recovery</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#0b0f1a;
+color:white;
+overflow-x:hidden;
+}
+
+/* NAVBAR */
+
+header{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:80px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:0 40px;
+background:transparent;
+z-index:10;
+}
+
+.logo{
+font-size:24px;
+font-weight:bold;
+letter-spacing:1px;
+}
+
+.phone{
+position:absolute;
+left:50%;
+transform:translateX(-50%);
+font-size:20px;
+font-weight:600;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:30px;
+font-size:18px;
+font-weight:500;
+}
+
+/* HERO */
+
+.hero{
+position:relative;
+height:100vh;
+width:100%;
+overflow:hidden;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.hero video{
+position:absolute;
+top:50%;
+left:50%;
+width:100%;
+height:100%;
+transform:translate(-50%,-50%);
+object-fit:cover;
+z-index:-2;
+}
+
+.overlay{
+position:absolute;
+width:100%;
+height:100%;
+background:rgba(0,90,255,0.55);
+z-index:-1;
+}
+
+.hero-content{
+max-width:700px;
+padding:20px;
+}
+
+.hero-content h1{
+font-size:54px;
+margin-bottom:15px;
+}
+
+.hero-content p{
+font-size:22px;
+margin-bottom:30px;
+}
+
+.cta{
+display:inline-block;
+padding:16px 32px;
+background:white;
+color:#003c9e;
+text-decoration:none;
+font-size:18px;
+font-weight:bold;
+border-radius:8px;
+transition:0.2s;
+}
+
+.cta:hover{
+transform:translateY(-3px);
+}
+
+/* CONTENT SECTIONS */
+
+section{
+padding:90px 20px;
+max-width:1200px;
+margin:auto;
+text-align:center;
+}
+
+section h2{
+font-size:36px;
+margin-bottom:20px;
+}
+
+/* SERVICES */
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+margin-top:50px;
+}
+
+.service{
+background:#121a2e;
+padding:35px;
+border-radius:12px;
+}
+
+.service h3{
+margin-bottom:12px;
+font-size:22px;
+}
+
+.service p{
+line-height:1.6;
+color:#d6d6d6;
+}
+
+/* ABOUT */
+
+#about p{
+max-width:800px;
+margin:auto;
+line-height:1.8;
+font-size:18px;
+color:#d6d6d6;
+}
+
+/* CONTACT */
+
+.contact-wrapper{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+margin-top:40px;
+align-items:start;
+}
+
+.map iframe{
+width:100%;
+height:350px;
+border:none;
+border-radius:10px;
+}
+
+.contact-details{
+text-align:left;
+}
+
+.contact-details p{
+margin-bottom:15px;
+font-size:18px;
+}
+
+/* FOOTER */
+
+footer{
+background:#05070f;
+padding:40px 20px;
+text-align:center;
+font-size:14px;
+margin-top:60px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+header{
+padding:0 20px;
+height:70px;
+}
+
+.logo{
+font-size:18px;
+}
+
+.phone{
+font-size:16px;
+}
+
+nav{
+display:none;
+}
+
+.hero-content h1{
+font-size:36px;
+}
+
+.hero-content p{
+font-size:18px;
+}
+
+.contact-wrapper{
+grid-template-columns:1fr;
+}
+
+.map iframe{
+height:300px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">Brown & Sons</div>
+
+<div class="phone">07123 456789</div>
+
+<nav>
+<a href="#services">Services</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<video autoplay muted loop playsinline>
+<source src="basr (1).mp4" type="video/mp4">
+</video>
+
+<div class="overlay"></div>
+
+<div class="hero-content">
+<h1>24/7 Vehicle Recovery</h1>
+<p>Fast, reliable breakdown recovery and roadside assistance</p>
+<a class="cta" href="tel:07123456789">Call Now</a>
+</div>
+
+</section>
+
+<section id="services">
+
+<h2>Our Services</h2>
+
+<div class="services">
+
+<div class="service">
+<h3>Breakdown Recovery</h3>
+<p>If your vehicle has broken down at home, on the roadside or on the motorway, our team can respond quickly to recover your vehicle safely. We operate 24/7 and aim to get you and your vehicle to a secure location or repair garage as quickly as possible.</p>
+</div>
+
+<div class="service">
+<h3>Accident Recovery</h3>
+<p>Following a road traffic accident, we provide professional accident recovery services to safely transport damaged vehicles. Our operators ensure vehicles are recovered carefully and transported to your chosen repair centre or storage location.</p>
+</div>
+
+<div class="service">
+<h3>Vehicle Transport</h3>
+<p>We offer reliable vehicle transport for cars, vans and light commercial vehicles. Whether you're moving a vehicle across town or delivering it to a garage or dealership, our transport service ensures it arrives safely.</p>
+</div>
+
+<div class="service">
+<h3>Roadside Assistance</h3>
+<p>Not every issue requires full recovery. We provide roadside help including jump starts, flat tyre changes, battery issues and minor mechanical problems to help get you back on the road quickly.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2>About Us</h2>
+
+<p>
+Brown & Sons Recovery is a professional vehicle recovery and roadside assistance company providing reliable support to drivers whenever they need it. Our experienced team operates 24 hours a day, responding to breakdowns, accidents and vehicle transport requests quickly and efficiently. We understand how stressful vehicle problems can be, which is why our priority is to provide fast response times, safe vehicle handling and friendly customer service.
+
+Our operators are trained to recover vehicles in a wide range of situations, from roadside breakdowns to accident scenes. Whether your vehicle needs a short tow to a nearby garage or full transport to another location, we ensure it is handled safely and professionally at every stage.
+
+At Brown & Sons Recovery we focus on reliability, professionalism and helping drivers get back on the road as quickly as possible.
+</p>
+
+</section>
+
+<section id="contact">
+
+<h2>Contact</h2>
+
+<div class="contact-wrapper">
+
+<div class="map">
+<iframe src="https://www.google.com/maps?q=Cambridge%20UK&output=embed"></iframe>
+</div>
+
+<div class="contact-details">
+<p><strong>Address:</strong><br>Unit 4 Industrial Estate<br>Cambridge, UK</p>
+
+<p><strong>Phone:</strong><br>07123 456789</p>
+
+<p><strong>Email:</strong><br>info@brownandsonsrecovery.co.uk</p>
+
+<p><strong>Hours:</strong><br>24 Hours / 7 Days a Week</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 Brown & Sons Recovery
+</footer>
+
+<script>
+
+// smooth scroll
+
+document.querySelectorAll('nav a').forEach(anchor => {
+anchor.addEventListener('click', function(e) {
+e.preventDefault();
+
+document.querySelector(this.getAttribute('href')).scrollIntoView({
+behavior: 'smooth'
+});
+});
+});
+
+</script>
+
+</body>
+</html>
