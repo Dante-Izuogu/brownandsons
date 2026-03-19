@@ -120,6 +120,24 @@ transition:0.2s;
 transform:translateY(-3px);
 }
 
+@keyframes flash {
+0% { opacity: 1; }
+50% { opacity: 0.4; }
+100% { opacity: 1; }
+}
+
+.cta{
+display:inline-block;
+padding:16px 32px;
+background:white;
+color:#003c9e;
+text-decoration:none;
+font-size:18px;
+font-weight:bold;
+border-radius:8px;
+transition:0.2s;
+animation: flash 1s infinite;
+}
 /* CONTENT SECTIONS */
 
 section{
@@ -257,7 +275,7 @@ height:300px;
 
 <header>
 
-<div class="logo">Brown & Sons</div>
+<div class="logo">Brown and Sons Services</div>
 
 <div class="phone">07123 456789</div>
 
@@ -280,7 +298,7 @@ height:300px;
 <div class="hero-content">
 <h1>24/7 Vehicle Recovery</h1>
 <p>Fast, reliable breakdown recovery and roadside assistance</p>
-<a class="cta" href="tel:07123456789">Call Now</a>
+<a class="cta" href="tel:07123456789">CALL NOW</a>
 </div>
 
 </section>
